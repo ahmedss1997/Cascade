@@ -1,0 +1,26 @@
+
+%backgroundSize {
+  @include prefixer (background-size, cover, webkit moz o);
+}
+
+%textTransform {
+  text-transform: uppercase;
+}
+
+.scrolled {
+  width: 100%;
+  height: 50px;
+  background-color: #FFF;
+  color: #888;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  // @extend %transition;
+}
+
+.hidden {display: none;}
+
+%transition {
+  @include prefixer (transition, all .5s ease-in-out, webkit moz o);
+}
